@@ -7,6 +7,7 @@ import { Architecture } from "@/components/sections/architecture";
 import { ProtocolComparisonSection } from "@/components/sections/protocol-comparison-section";
 import { UseCasesSection } from "@/components/sections/use-cases-section";
 import { Standards } from "@/components/sections/standards";
+import ImageFooter from "@/components/sections/imageFooter";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <UseCasesSection />
       <Standards />
       <Footer />
+      <ImageFooter/>
     </div>
   );
 }
