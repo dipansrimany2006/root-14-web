@@ -1,7 +1,23 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { MedievalSharp } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { ScrollManager } from "@/components/scroll-manager";
 import "./globals.css";
+
+const medievalSharp = MedievalSharp({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-medieval",
+  display: "swap",
+});
+
+const poppinsFont = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
+});
 
 const switzer = localFont({
   src: [
@@ -65,7 +81,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${switzer.variable} ${jetbrainsMono.variable} antialiased`}>
+      <body className={`${switzer.variable} ${jetbrainsMono.variable} ${medievalSharp.variable} ${poppinsFont.variable} antialiased`}>
         <ScrollManager />
         {children}
       </body>
