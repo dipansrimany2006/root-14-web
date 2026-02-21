@@ -8,7 +8,7 @@ export function Standards() {
   return (
     <section
       id="standards"
-      className="relative px-6 md:px-16 lg:px-24 py-24 border-t border-foreground/10 overflow-hidden"
+      className="relative px-6 md:px-16 lg:px-24 py-24 border-y border-foreground/10 overflow-hidden"
     >
       <StripedPattern opacity={0.04} spacing={28} angle={45} />
 
