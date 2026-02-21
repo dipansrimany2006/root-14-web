@@ -113,6 +113,15 @@ export function Navbar() {
 
               <NavigationMenuItem>
                 <NavigationMenuLink
+                  href="https://root14-docs.vercel.app/"
+                  className={cn(navigationMenuTriggerStyle(), "text-foreground/60")}
+                >
+                  <BookOpen className="h-4 w-4 mr-2" /> Docs
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink
                   href="https://github.com"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -20,7 +20,6 @@ export default function Home() {
       <ProtocolComparisonSection />
       <UseCasesSection />
       <Standards />
-      <Footer />
       <ImageFooter/>
     </div>
   );
