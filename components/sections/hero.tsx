@@ -20,7 +20,7 @@ export function Hero() {
       {/* Layer 1 — Title text (slides in) */}
       <div className="absolute inset-0 z-10 flex items-center justify-center px-88 py-16">
         <div className="mb-10">
-          <motion.h1
+          {/* <motion.h1
             className="text-[150px] leading-none text-black text-center font-poppins font-[300]!"
             initial={{ y: "50vh", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -28,7 +28,8 @@ export function Hero() {
           >
             The ZK Standard
             <p className="text-[#727272]">for Stellar</p>
-          </motion.h1>
+          </motion.h1> */}
+          <motion.img src="/title_text.svg" alt="Hero Title" initial={{ y: "50vh", opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }} />
         </div>
       </div>
 
