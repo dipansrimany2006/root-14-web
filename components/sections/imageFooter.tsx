@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const ImageFooter = () => {
   return (
-    <section className="relative h-[70vh] overflow-hidden bg-linear-to-t from-[#E3E3EB] to-transparent">
+    <section className="relative h-[70vh] overflow-hidden bg-linear-to-t from-muted-gray to-transparent">
       {/* Layer 0 — ROOT14 text (behind, like hero title) */}
       <div className="absolute inset-0 z-10 flex items-center justify-center">
         <motion.img
